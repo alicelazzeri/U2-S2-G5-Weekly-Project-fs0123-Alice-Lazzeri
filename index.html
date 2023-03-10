@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guarda film e programmi TV su Netflix online o direttamente su smart TV, console per videogiochi, PC, Mac, cellulare, tablet e molti altri dispositivi.">
+  <title>Netflix</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/netflix-logo.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body class="bg-dark text-light">
+
+  <nav class="navbar sticky-top navbar-expand-md bg-dark text-nowrap px-3" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/netflix_logo.png" alt="Netflix Logo" width="120px" height="50px" style="object-fit: cover">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link fw-light" href="#">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active fw-light" aria-current="page" href="#">TV Shows</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link fw-light" href="#">Movies</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link fw-light" href="#">Recently Added</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link fw-light" href="#">My List</a>
+          </li>
+    
+        </ul>
+
+        <div class="d-flex gap-5">
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link fw-light" href="#"><p>KIDS</p></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-bell-fill"></i></a>
+            </li>
+
+            <li class="nav-item">
+              <div class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="assets/images/avatar.png" alt="Avatar" width="45px">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" style="left: -140px; margin-top: 10px; width: 200px;">
+                  <li><a class="dropdown-item dropdown-item-text fw-light" href="#"><img src="assets/images/avatar.png" alt="Avatar" width="30px" style="border-radius: 15px; margin-right: 5px;">Account</a></li>
+                  <li><a class="dropdown-item dropdown-item-text fw-light" href="#"><img src="assets/images/kids_icon.png" alt="Avatar" width="30px" style="border-radius: 15px; margin-right: 5px;">Kids</a></li>
+                  <li><a class="dropdown-item dropdown-item-text fw-light" href="#"><i class="bi bi-person-fill" style="margin-right: 5px;"></i>Profile</a></li>
+                  <li><a class="dropdown-item dropdown-item-text fw-light" href="#"><i class="bi bi-question-circle" style="margin-right: 5px;"></i>Support Center</a></li>
+                  <hr class="mt-1 mb-1">
+                  <li><a class="dropdown-item dropdown-item-text fw-light" href="edit-profile.html"><i class="bi bi-gear-wide" style="margin-right: 5px;"></i>Edit profile</a></li>
+                </ul>
+              </div>
+            </li>
+
+          </ul>
+          
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid pt-2 px-3">
+
+    <div class="d-flex justify-content-between align-items-center px-3">
+      <div class="d-flex align-items-center">
+        <h2>TV Shows</h2>
+        <div class="form-group">
+          <select class="form-select bg-dark text-light" aria-label="Default select example" style="width: 110px; margin-left: 20px;">
+            <option selected disabled>Genres</option>
+            <option value="1">Horror</option>
+            <option value="2">Comedy</option>
+            <option value="3">Action</option>
+            <option value="4">Drama</option>
+          </select>
+        </div> 
+      </div>
+
+      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+        <label class="btn btn-outline-light" for="btnradio1">
+          <i class="bi bi-list"></i>
+        </label>
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+        <label class="btn btn-outline-light" for="btnradio2">
+          <i class="bi bi-grid-fill"></i>
+        </label>
+      </div>
+      
+    </div>
+
+    <h4 class="px-3 pt-5 pb-3">Trending Now</h4>
+
+    <div id="picsCarousel1" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 gy-2 px-3">
+
+            <div class="col">
+              <a href="#">
+                <img src="assets/images/media/media0.webp" alt="Media" class="img-fluid">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#">
+                <img src="assets/images/media/media1.jpg" alt="Media" class="img-fluid">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#">
+                <img src="assets/images/media/media2.webp" alt="Media" class="img-fluid">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#">
+                <img src="assets/images/media/media3.webp" alt="Media" class="img-fluid">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#">
+                <img src="assets/images/media/media4.jpg" alt="Media" class="img-fluid">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#">
+                <img src="assets/images/media/media5.webp" alt="Media" class="img-fluid">
+              </a>
+            </div>
+            
+
+          </div>
+
+        </div>
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#picsCarousel1" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#picsCarousel1" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+
+    </div>
+
+    <h4 class="px-3 pt-5 pb-3">Watch It Again</h4>
+
+    <div id="picsCarousel2" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 gy-2 px-3">
+
+            <div class="col">
+              <a href="#">
+                <img src="assets/images/media/media6.jpg" alt="Media" class="img-fluid">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#">
+                <img src="assets/images/media/media7.webp" alt="Media" class="img-fluid">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#">
+                <img src="assets/images/media/media8.webp" alt="Media" class="img-fluid">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#">
+                <img src="assets/images/media/media9.jpg" alt="Media" class="img-fluid">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#">
+                <img src="assets/images/media/media10.jpg" alt="Media" class="img-fluid">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#">
+                <img src="assets/images/media/media11.jpg" alt="Media" class="img-fluid">
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#picsCarousel2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#picsCarousel2" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+
+    </div>
+
+    <h4 class="px-3 pt-5 pb-3">New Releases</h4>
+
+    <div id="picsCarousel3" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 gy-2 px-3">
+
+            <div class="col">
+              <a href="#">
+                <img src="assets/images/media/media12.jpg" alt="Media" class="img-fluid">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#">
+                <img src="assets/images/media/media13.jpg" alt="Media" class="img-fluid">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#">
+                <img src="assets/images/media/media14.webp" alt="Media" class="img-fluid">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#">
+                <img src="assets/images/media/media15.jpg" alt="Media" class="img-fluid">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#">
+                <img src="assets/images/media/media16.webp" alt="Media" class="img-fluid">
+              </a>
+            </div>
+            <div class="col">
+              <a href="#">
+                <img src="assets/images/media/media17.jpg" alt="Media" class="img-fluid">
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#picsCarousel3" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#picsCarousel3" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+
+    </div>
+
+    <footer>
+      
+    </footer>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  
+</body>
+</html>
