@@ -10,7 +10,7 @@
 
 
 .carousel .col:hover{
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
 
 .carousel-item {
@@ -20,11 +20,7 @@
 .carousel-item .col {
   padding-left: 3px;
   padding-right: 3px;
-  box-shadow: none;
-  transition: box-shadow 0.5s ease-in-out;
 }
 
-.carousel-item .col:hover {
-  box-shadow: 5px 5px 10px 14px #FFFFFF;
-}
+
 
